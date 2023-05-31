@@ -259,14 +259,28 @@ console.log(characters, "sono characters dopo")
 */
 let cusualElement =
   starWarsCharacters[Math.floor(Math.random() * starWarsCharacters.length)]
-console.log(
-  "Ciao io sono",
-  cusualElement.name,
-  "sono nato il:",
-  cusualElement.birth_year,
-  "sono alto",
-  cusualElement.height,
-  "cm, e peso",
-  cusualElement.mass,
-  "kg"
-)
+if (cusualElement.gender === "male" || cusualElement.gender === "robot") {
+  console.log(
+    "Ciao io sono",
+    cusualElement.name,
+    "sono nato il:",
+    cusualElement.birth_year,
+    "sono alto",
+    cusualElement.height,
+    "cm, e peso",
+    cusualElement.mass,
+    "kg"
+  )
+} else {
+  console.log(
+    "Ciao io sono",
+    cusualElement.name,
+    "sono nata il:",
+    cusualElement.birth_year,
+    "sono alta",
+    cusualElement.height,
+    "cm, e peso",
+    cusualElement.mass,
+    "kg"
+  )
+}
