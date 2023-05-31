@@ -128,12 +128,6 @@ let obj = {}
 
 for (let i = 0; i < starWarsCharacters.length; i++) {
   if (starWarsCharacters[i].gender === "female") {
-    console.log(
-      "Esercizio3!!",
-      starWarsCharacters[i].name,
-      starWarsCharacters[i].hair_color,
-      starWarsCharacters[i].eye_color
-    )
     obj[i] = {
       name: starWarsCharacters[i].name,
       hair_color: starWarsCharacters[i].hair_color,
